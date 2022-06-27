@@ -1,3 +1,17 @@
 <label>CPF: </label>
-<input type="text" id="cpf">
+<input
+      #inputElement
+      style="width: 120px"
+      nz-input
+      nz-tooltip
+      nzTrigger="focus"
+      nzPlacement="topLeft"
+      nzOverlayClassName="numeric-input"
+      [ngModel]="cpf"
+      placeholder="Input a number"
+      (ngModelChange)="validar($event)"
+    />
+
+
+
 

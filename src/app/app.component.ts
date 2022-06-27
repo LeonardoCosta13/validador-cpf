@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'validador-cpf';
+  cpf: any;
+
+
+  validar(valor: any){
+    console.log(this.cpf);
+    this.cpf = valor;
+    console.log(this.cpf);
+    if(valor.length > 5){
+      alert("Digite um valor menor")
+    }
+  }
 }
+
